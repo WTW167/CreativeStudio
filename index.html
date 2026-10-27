@@ -1,46 +1,101 @@
-<<<<<<< HEAD
-
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CreativeStudio</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/script.js" defer></script>
+  <meta name="description" content="bbb" />
+  <link rel="icon" href="./assets/images/fav.jpg" />
+  <script src="./assets/js/script.js" defer></script>
+  <link rel="stylesheet" href="./assets/stylesheets/style.css">
 </head>
-<body>
+
+<body class="index">
   <header class="l-header">
-    <h1>CreativeStudio</h1>
-    <nav>
-      <a href="#about">ABOUT</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
+    <section class="p-header">
+    <div class="p-header__wrap">
+      <a class="p-header__logo" href="./index.html">
+        <img src="./assets/image/logo.png" alt="サイトロゴ">
+      </a>
+      <ul class="p-header__menu">
+        <li class="p-header__menuList">
+          <div class="p-header__menuTtem">
+            <a href="./index.html">
+              <p class="p-menuTtem__label">HOME</p>
+            </a>
+          </div>
+        </li>
+        <li class="p-header__menuList">
+          <div class="p-header__menuTtem">
+            <a href="./index.html">
+              <p class="p-menuTtem__label">ABOUT</p>
+            </a>
+          </div>
+        </li>
+        <li class="p-header__menuList">
+          <div class="p-header__menuTtem">
+            <a href="./index.html">
+              <p class="p-menuTtem__label">PROJECT</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <div class="p-header__marquee">
+        <a href="./index.html">
+          <section class="p-marquee" aria-label="メッセージ">
+            <div class="p-marquee__track">
+
+              <!-- 1セット目 -->
+              <div class="p-marquee__group">
+                <p class="p-marquee__text">HELLO</p>
+
+                <img
+                  class="p-marquee__logo"
+                  src="./assets/images/logo.png"
+                  alt=""
+                />
+
+                <p class="p-marquee__text">FEEL FREE</p>
+
+                <img
+                  class="p-marquee__logo"
+                  src="./assets/images/logo.png"
+                  alt=""
+                />
+              </div>
+
+              <!-- 2セット目：ループ用の複製 -->
+              <div class="p-marquee__group" aria-hidden="true">
+                <p class="p-marquee__text">HELLO</p>
+
+                <img
+                  class="p-marquee__logo"
+                  src="./assets/images/logo.png"
+                  alt=""
+                />
+
+                <p class="p-marquee__text">FEEL FREE</p>
+
+                <img
+                  class="p-marquee__logo"
+                  src="./assets/images/logo.png"
+                  alt=""
+                />
+              </div>
+
+            </div>
+          </section>
+
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+    </section>
   </header>
 
-  <main>
-    <section class="p-hero">
-      <p class="p-hero__label">DESIGN YOUR IDEAS</p>
-      <h2>アイデアを、カタチに。</h2>
-      <p>CreativeStudioのWebサイトへようこそ。</p>
-      <button class="c-button" id="js-messageButton">
-        メッセージを表示
-      </button>
-      <p id="js-message" aria-live="polite"></p>
-    </section>
 
-    <section class="p-about" id="about">
-      <h2>ABOUT</h2>
-      <p>デザインとテクノロジーで、新しい可能性をつくります。</p>
-    </section>
 
-    <section class="p-contact" id="contact">
-      <h2>CONTACT</h2>
-      <p>お問い合わせはこちらから。</p>
-    </section>
-  </main>
-
-  <footer class="l-footer">
-    <p>&copy; 2026 CreativeStudio</p>
-  </footer>
-=======
+</body>
