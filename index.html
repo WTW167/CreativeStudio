@@ -8,7 +8,7 @@
   <meta name="description" content="bbb" />
   <link rel="icon" href="./assets/images/fav.jpg" />
   <script src="./assets/js/script.js" defer></script>
-  <link rel="stylesheet" href="./assets/stylesheets/style.css">
+  <link rel="stylesheet" href="./assets/stylesheet/style.css">
 </head>
 
 <body class="index">
@@ -16,85 +16,105 @@
     <section class="p-header">
     <div class="p-header__wrap">
       <a class="p-header__logo" href="./index.html">
-        <img src="./assets/image/logo.png" alt="サイトロゴ">
+        <img src="./assets/image/logo.png" alt="サイトロゴ" width="120" height="36">
       </a>
       <ul class="p-header__menu">
         <li class="p-header__menuList">
-          <div class="p-header__menuTtem">
-            <a href="./index.html">
-              <p class="p-menuTtem__label">HOME</p>
-            </a>
+          <div class="p-header__menuItem">
+            <a href="./index.html" class="p-menuItem__label active" aria-current="page">
+              Home</a>
           </div>
         </li>
         <li class="p-header__menuList">
-          <div class="p-header__menuTtem">
-            <a href="./index.html">
-              <p class="p-menuTtem__label">ABOUT</p>
-            </a>
+          <div class="p-header__menuItem">
+            <a href="./index.html" class="p-menuItem__label" aria-current="page">
+              About</a>          
           </div>
         </li>
         <li class="p-header__menuList">
-          <div class="p-header__menuTtem">
-            <a href="./index.html">
-              <p class="p-menuTtem__label">PROJECT</p>
-            </a>
+          <div class="p-header__menuItem">
+            <a href="./index.html" class="p-menuItem__label" aria-current="page">
+              Project</a>
           </div>
         </li>
       </ul>
       <div class="p-header__marquee">
         <a href="./index.html">
-          <section class="p-marquee" aria-label="メッセージ">
-            <div class="p-marquee__track">
+          <section class="p-marquee">
+            <div class="p-marquee__wrap">
 
               <!-- 1セット目 -->
-              <div class="p-marquee__group">
+              <div class="p-marquee__item">
                 <p class="p-marquee__text">HELLO</p>
-
-                <img
-                  class="p-marquee__logo"
-                  src="./assets/images/logo.png"
-                  alt=""
-                />
+                <img class="p-marquee__logo" src="./assets/image/goodsign.svg">
 
                 <p class="p-marquee__text">FEEL FREE</p>
+                <img class="p-marquee__logo" src="./assets/image/heartmark.svg">
 
-                <img
-                  class="p-marquee__logo"
-                  src="./assets/images/logo.png"
-                  alt=""
-                />
-              </div>
-
-              <!-- 2セット目：ループ用の複製 -->
-              <div class="p-marquee__group" aria-hidden="true">
-                <p class="p-marquee__text">HELLO</p>
-
-                <img
-                  class="p-marquee__logo"
-                  src="./assets/images/logo.png"
-                  alt=""
-                />
-
-                <p class="p-marquee__text">FEEL FREE</p>
-
-                <img
-                  class="p-marquee__logo"
-                  src="./assets/images/logo.png"
-                  alt=""
-                />
+                <p class="p-marquee__text">TO CONNTACT US</p>
+                <img class="p-marquee__logo" src="./assets/image/smile.svg">
               </div>
 
             </div>
           </section>
-
-          </div>
-        </a>
+        </a> 
+      </div>
+        
       </div>
 
 
     </div>
     </section>
   </header>
+  <footer class="l-footer">
+    <section class="p-footer">
+      <div class="p-footer__wrap">
+        <div  class="p-footer__contact">
+          <div class="p-contact__item">
+            <div class="p-contact__text">Contact</div>
+            <dd>
+            <a href="./index.html" class="p-contact__address">./index.html</a>
+            </dd>
+            <dd>
+            <a href="./index.html" class="p-contact__address">00-0000-0000</a>
+            </dd>
+          </div>
+        </div>  
+
+        <div  class="p-footer__location">
+          <div class="p-location__item">
+            <div class="p-location_text">location</div>
+            <dd>
+              <p>〒000-0000<br>
+                99F, Shibuya Building, 0-00-0 <br>
+                Shibuya,Shibuya-ku, Tokyo</p>
+            </dd>
+          </div>
+        </div>
+
+        <div  class="p-footer__socialMedia">
+          <div class="p-socialMedia__item">
+            <div class="p-socialMedia_text">Social media</div>
+            <a href="./index.html" class="p-socialMedia__address">socialMedia</a>
+          </div>
+        </div>  
+
+        <div  class="p-footer__dayAria">
+          <div class="p-dayAria__item">
+            <div class="p-dayAria_text">, Tokyo Japan</div>
+          </div>
+        </div>
+
+        <div  class="p-footer__copyRight">
+          <div class="p-copyRight__item">
+            <div class="p-copyRight_text">© CreativeStudio inc.</div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </footer>
 
 
 
