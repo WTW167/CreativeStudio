@@ -111,7 +111,7 @@ body {
   background-color: #282828;
 }
 
-.p-footer__wrap {
+.p-lowerLayer__wrap {
   display: flex;
   justify-content: space-around;
   color: #FFFFFF;
