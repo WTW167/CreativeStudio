@@ -181,8 +181,12 @@ body {
 .p-explain__shelf {
   display: flex;
   justify-content: space-between;
-  padding: 48px 0; 
-  border-top-color: rgb(40 40 40 / var(--tw-border-opacity));
+  padding: 48px 0;
+  border-top: 1px solid #000; 
+}
+
+.p-explain__shelf:nth-child(3) {
+  border-bottom: 1px solid #000; 
 }
 
 .p-explain__item {
