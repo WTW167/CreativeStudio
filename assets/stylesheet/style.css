@@ -193,6 +193,28 @@ body {
   width: 510px;
 }
 
+.p-ourService__detail {
+  margin-top: 66px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-ourService__detail a {
+  text-decoration: none;
+  color: #000;
+}
+
+.p-detail__wrap {
+  display: flex;
+  gap: 11px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+.p-detail__text {
+  font-size: 30px;
+}
+
 .p-footer__title {
   display: flex;
   justify-content: center;
