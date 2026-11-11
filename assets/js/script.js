@@ -1,20 +1,26 @@
-const magnetic = document.querySelector('.p-footer__magnetic');
+const footer = document.querySelector('.l-footer');
+const magnetic = footer?.querySelector('.p-footer__magnetic');
 
-document.addEventListener('mousemove', (e) => {
-  const rect = magnetic.getBoundingClientRect();
-  const centerX = rect.left + rect.width / 2;
-  const centerY = rect.top + rect.height / 2;
+if (footer && magnetic) {
+  footer.addEventListener('mousemove', (e) => {
+    const rect = magnetic.getBoundingClientRect();
 
-  // 吸い込まれるように動きを大きくする
-  const deltaX = (e.clientX - centerX) * 5.0;
-  const deltaY = (e.clientY - centerY) * 5.0;
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
 
-  magnetic.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-});
+    // マウスと要素の中心との距離を計算
+    const deltaX = (e.clientX - centerX) * 5.0;
+    const deltaY = (e.clientY - centerY) * 5.0;
 
-magnetic.addEventListener('mouseleave', () => {
-  magnetic.style.transform = 'translate(0, 0)';
-});
+    magnetic.style.transform =
+      `translate(${deltaX}px, ${deltaY}px)`;
+  });
+
+  footer.addEventListener('mouseleave', () => {
+    magnetic.style.transform = 'translate(0, 0)';
+  });
+}
+
 
 const clock = document.getElementById('p-dayAria__timeClock');
 function updateClock() {

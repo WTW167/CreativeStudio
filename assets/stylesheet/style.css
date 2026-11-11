@@ -135,7 +135,7 @@ body {
 }
 
 .p-upperLayer__explain {
-  width: 44%;
+  width: 620px;
   line-height: 1.4;
 }
 
@@ -175,7 +175,7 @@ body {
 }
 
 .p-contents__explain {
-  width: 44%;
+  width: 620px;
 }
 
 .p-explain__shelf {
@@ -191,6 +191,41 @@ body {
 
 .p-explain__item {
   width: 510px;
+}
+
+.p-explain__title {
+  display: inline-block;
+}
+
+.p-explain__titleEn {
+  font-family:sans-serif;
+  font-size: 40px;
+  line-height: 0.9;
+}
+
+.p-explain__redUnderline {
+  width: 312px;
+  height: 30px;
+}
+
+.p-explain__greenUnderline {
+  width: 158px;
+  height: 30px;
+}
+
+.p-explain__yellowUnderline {
+  width: 381px;
+  height: 30px;
+}
+
+.p-explain__titleJa {
+  font-weight: 700;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.p-explain__mainText {
+  margin-top: 24px;
 }
 
 .p-ourService__detail {
