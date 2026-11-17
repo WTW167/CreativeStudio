@@ -40,11 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const guidanceItems = document.querySelectorAll(
     ".p-featureProjects__guidance > div"
   );
-
   const imageItems = document.querySelectorAll(
     ".p-featureProjects__image--slider > .p-featureProjects__image--slide"
   );
-
   if (
     guidanceItems.length === 0 ||
     guidanceItems.length !== imageItems.length
@@ -60,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
   guidanceItems.forEach((item, index) => {
     item.classList.toggle("is-active", index === 0);
   });
-
   imageItems.forEach((item) => {
     item.classList.remove("is-removed");
   });
@@ -69,28 +66,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // テキスト切り替え
     guidanceItems[currentIndex].classList.remove("is-active");
-
     currentIndex = (currentIndex + 1) % guidanceItems.length;
-
     guidanceItems[currentIndex].classList.add("is-active");
 
     // 画像を①→②→③の順番に消す
     const targetItem = imageItems[imageIndex];
-
     targetItem.classList.add("is-removed");
-
     imageIndex++;
 
     // 3枚すべて消えたら再表示
     if (imageIndex >= imageItems.length) {
-
       setTimeout(() => {
         imageItems.forEach((item) => {
           item.classList.remove("is-removed");
         });
-
         imageIndex = 0;
-
       }, 1000);
     }
   }
