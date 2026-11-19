@@ -102,10 +102,23 @@ body {
 
 .p-main__illustration {
   margin-top: 90px;
+  position: relative;
 }
 
-.p-main__illustrationImage {
+.p-illustrationImage {
   width: 100%;
+}
+
+.p-main__illustration::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url("../image/illustrationIcon.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px;
+  margin-right: 100px;
 }
 
 .p-ourStatement__inner {
@@ -154,6 +167,7 @@ body {
   background-size: contain;
   transform: rotate(65deg);
 }
+
 .p-slogan__Inner {
   position: relative;
   z-index: 2; 
