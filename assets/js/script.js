@@ -87,3 +87,81 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(changeSlide, 5000);
 });
+
+
+const logo = document.querySelector('.p-brandLogo__svg');
+
+if (logo) {
+
+  // S・U・I のグループ
+  const group1 = {
+    S: logo.querySelector('#letter-S'),
+    U: logo.querySelector('#letter-U'),
+    I: logo.querySelector('#letter-I')
+  };
+
+  // T・D・O のグループ
+  const group2 = {
+    T: logo.querySelector('#letter-T'),
+    D: logo.querySelector('#letter-D'),
+    O: logo.querySelector('#letter-O')
+  };
+
+  // 各文字のカラー
+  const colors = {
+    S: '#FF8C00', // オレンジ
+    U: '#FFD700', // 黄色
+    I: '#87CEEB', // 水色
+    T: '#FF8C00', // オレンジ
+    D: '#FFD700', // 黄色
+    O: '#87CEEB'  // 水色
+  };
+
+  // 全文字を黒に戻す
+  const resetColor = () => {
+    [...Object.values(group1), ...Object.values(group2)].forEach(letter => {
+      if (letter) {
+        letter.style.fill = '#000000';
+      }
+    });
+  };
+
+  // S・U・I の色を変更
+  const changeGroup1 = () => {
+    resetColor();
+
+    Object.entries(group1).forEach(([letter, element]) => {
+      if (element) {
+        element.style.fill = colors[letter];
+      }
+    });
+  };
+
+  // T・D・O の色を変更
+  const changeGroup2 = () => {
+    resetColor();
+
+    Object.entries(group2).forEach(([letter, element]) => {
+      if (element) {
+        element.style.fill = colors[letter];
+      }
+    });
+  };
+
+  // アニメーションのパターン
+  const animationPatterns = [
+    resetColor,
+    changeGroup1,
+    changeGroup2
+  ];
+
+  let currentIndex = 0;
+
+  // 1秒ごとにアニメーションを切り替える
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % animationPatterns.length;
+
+    animationPatterns[currentIndex]();
+
+  }, 2000);
+}
