@@ -95,6 +95,60 @@ body {
   object-fit: contain;
 }
 
+.l-main {
+  padding-top: 137px;
+}
+
+.p-main__fvSection {
+  padding: 0 25px;
+}
+
+.p-mainVisual__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.p-mainVisual__left {
+  width: 335px;
+}
+
+.p-left {
+  width: 500px;
+}
+
+.p-left__upperText {
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.p-leftText__lowerText {
+  font-size: 13px;
+  margin-top: 25px;
+  line-height: 1.4;
+}
+
+.p-right {
+  width: 800px;
+  text-align: right;
+}
+
+.p-right__textInner {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.p-right__dayArea {
+  margin-top: 70px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.p-right__dayAreaTime {
+  display: inline-flex;
+}
+
 .p-main__bodySection {
   width: 1280px;
   margin: 0 auto;

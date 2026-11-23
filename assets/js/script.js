@@ -22,7 +22,7 @@ if (footer && magnetic) {
   });
 }
 
-// footer内の時刻表示
+// 時刻表示
 const clock = document.getElementById('p-dayAria__timeClock');
 function updateClock() {
   const now = new Date();
