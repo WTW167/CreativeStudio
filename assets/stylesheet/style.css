@@ -567,6 +567,7 @@ body {
   position: relative;
   background: transparent;
   transition: transform 0.2s ease-out;
+  width: 100%;
 }
 
 .p-footer__magneticIcon {
@@ -628,10 +629,10 @@ body {
   color: #fff;
   line-height: 18px;
   font-size: 15px;
+  display: flex;
 }
 
 .p-footer__dayArea {
-  display: flex;
   align-self: flex-end;
   font-size: 14px;
 }
@@ -661,6 +662,71 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .p-marquee__wrap {
+    animation: none;
+  }
+}
+
+
+
+
+
+
+
+
+/* スクロール領域 */
+.p-main__marquee {
+  width: 100vw;
+  overflow: hidden;
+
+  /* 親要素の幅から画面全体に広げる */
+  margin-left: calc(50% - 50vw);
+}
+
+/* 画像を横一列に並べる */
+.p-main__marqueeTrack {
+  display: flex;
+  width: max-content;
+
+  /* 一定速度で無限スクロール */
+  animation: marqueeScroll 25s linear infinite;
+}
+
+/* 画像1・画像2のグループ */
+.p-main__marqueeGroup {
+  flex: 0 0 100vw;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* 画像 */
+.p-main__marqueeImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 無限スクロール */
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* スマートフォン */
+@media (max-width: 768px) {
+  .p-main__marqueeTrack {
+    animation-duration: 18s;
+  }
+}
+
+/* 動きを抑制する設定 */
+@media (prefers-reduced-motion: reduce) {
+  .p-main__marqueeTrack {
     animation: none;
   }
 }

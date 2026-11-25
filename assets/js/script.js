@@ -23,13 +23,17 @@ if (footer && magnetic) {
 }
 
 // 時刻表示
-const clock = document.getElementById('p-dayAria__timeClock');
+const clocks = document.querySelectorAll('.p-dayAria__timeClock');
 function updateClock() {
   const now = new Date();
-  const h = String(now.getHours()).padStart(2, '0');   // 時(0〜23)
-  const m = String(now.getMinutes()).padStart(2, '0'); // 分(0〜59)
-  const s = String(now.getSeconds()).padStart(2, '0'); // 秒(0〜59)
-  clock.textContent = `${h}:${m}:${s}`;
+  const h = String(now.getHours()).padStart(2, '0');
+  const m = String(now.getMinutes()).padStart(2, '0');
+  const s = String(now.getSeconds()).padStart(2, '0');
+  const currentTime = `${h}:${m}:${s}`;
+
+  clocks.forEach((clock) => {
+    clock.textContent = currentTime;
+  });
 }
 updateClock();
 setInterval(updateClock, 1000);

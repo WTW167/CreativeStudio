@@ -112,16 +112,16 @@
                   </span>
                 </p>
                  
-                <div class="p-right__dayArea">
-                  <div class="p-right__dayAreaTime">
-                    <span>( </span>
-                    <p id="p-dayAria__timeClock">
-                      <div class="p-right__dayAreaText">
+                  <div class="p-right__dayArea">
+                    <div class="p-right__dayAreaTime">
+                      <span>( </span>
+                      <span class="p-dayAria__timeClock"></span>
+                      <span class="p-right__dayAreaText">
                         , Tokyo Japan )
-                      </div>
-                    </p>
-                  </div>  
-                </div>
+                      </span>
+                    </div>
+                  </div>
+
               </div>
             </div>
           </div>
@@ -236,9 +236,36 @@
                     </div>
                  </div>  
               </div>
-
             </div>
           </section>
+
+
+
+<div class="p-main__marquee">
+
+  <div class="p-main__marqueeTrack">
+
+    <!-- 1つ目のグループ -->
+    <div class="p-main__marqueeGroup">
+      <img
+        class="p-main__marqueeImage"
+        src="./assets/image/Scroll STUDIO.png"
+        alt="STUDIO"
+      >
+    </div>
+
+    <!-- 2つ目のグループ -->
+    <div class="p-main__marqueeGroup" aria-hidden="true">
+      <img
+        class="p-main__marqueeImage"
+        src="./assets/image/Scroll STUDIO.png"
+        alt=""
+      >
+    </div>
+
+  </div>
+
+</div>
 
 
           <section class="p-featureProjects">
@@ -724,11 +751,11 @@
             <!-- Day Area -->
             <div class="p-footer__dayArea">
               <div class="p-footer__dayAreaTime">
-                <p id="p-dayAria__timeClock"></p>
-              </div>
-              <div class="p-footer__dayAreaItem">
-                <div class="p-footer__dayAreaText">
-                  , Tokyo Japan
+                <span class="p-dayAria__timeClock"></span>
+                <div class="p-footer__dayAreaItem">
+                  <div class="p-footer__dayAreaText">
+                    , Tokyo Japan
+                  </div>
                 </div>
               </div>
             </div>
